@@ -1,0 +1,13 @@
+gpioPortD:
+    12 -> LED4@0
+    13 -> LED3@0
+    14 -> LED5@0
+    15 -> LED6@0
+
+LED3: Miscellaneous.LED @ gpioPortD 13    // Orange
+LED4: Miscellaneous.LED @ gpioPortD 12    // Green
+LED5: Miscellaneous.LED @ gpioPortD 14    // Red
+LED6: Miscellaneous.LED @ gpioPortD 15    // Blue
+
+UserButton: Miscellaneous.Button @ gpioPortA
+    -> gpioPortA@0
